@@ -1,0 +1,155 @@
+%YAML 1.1
+--- !sparrow.Snapshot
+name: '1'
+state: !sparrow.ViewerState
+  lat: -58.0268
+  lon: -27.4857732475229
+  depth: 0.0
+  strike: 90.0
+  dip: 0.0
+  distance: 0.20026381643009772
+  elements:
+  - !sparrow.IcosphereState
+    base: icosahedron
+    kind: kind1
+    level: 4
+    visible: true
+    smooth: true
+  - !sparrow.GridState
+    visible: true
+  - !sparrow.CoastlinesState
+    visible: true
+    resolution: intermediate
+    opacity: 0.3
+  - !sparrow.PlatesBoundsState
+    visible: true
+    opacity: 1.0
+    color_by_slip_type: false
+    lines: true
+  - !sparrow.CatalogState
+    visible: true
+    size: 2.6
+    cpt: !pyrocko.gui.sparrow.elements.base.CPTState
+      cpt_name: slip_colors
+      cpt_mode: min-max
+      cpt_scale:
+      - null
+      - null
+    constant_color: chameleon2
+    depth_offset: 0.0
+    symbol: beachball
+    selection: !sparrow.FileCatalogSelection
+      paths:
+      - /home/malde/Documents/Jobs_Praktika/PhD/publications/southsandwich/catalogs/geofon_main.yaml
+  - !sparrow.CatalogState
+    visible: true
+    size: 2.6
+    cpt: !pyrocko.gui.sparrow.elements.base.CPTState
+      cpt_name: slip_colors
+      cpt_mode: min-max
+      cpt_scale:
+      - null
+      - null
+    constant_color: plum2
+    depth_offset: 0.0
+    symbol: beachball
+    selection: !sparrow.FileCatalogSelection
+      paths:
+      - /home/malde/Documents/Jobs_Praktika/PhD/publications/southsandwich/catalogs/usgs_main.yaml
+  - !sparrow.CatalogState
+    visible: true
+    size: 2.6
+    cpt: !pyrocko.gui.sparrow.elements.base.CPTState
+      cpt_name: slip_colors
+      cpt_mode: min-max
+      cpt_scale:
+      - null
+      - null
+    constant_color: scarletred2
+    depth_offset: 0.0
+    symbol: beachball
+    selection: !sparrow.FileCatalogSelection
+      paths:
+      - /home/malde/Documents/Jobs_Praktika/PhD/publications/southsandwich/catalogs/global_cmt_main.yaml
+  lighting: warm
+thumb: |-
+  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
+--- !sparrow.Transition {}
+--- !sparrow.Snapshot
+name: '1'
+state: !sparrow.ViewerState
+  lat: -58.0268
+  lon: -27.4858
+  depth: 0.0
+  strike: 90.0
+  dip: 0.0
+  distance: 0.20026381643009772
+  elements:
+  - !sparrow.IcosphereState
+    base: icosahedron
+    kind: kind1
+    level: 4
+    visible: true
+    smooth: true
+  - !sparrow.GridState
+    visible: true
+  - !sparrow.CoastlinesState
+    visible: true
+    resolution: intermediate
+    opacity: 0.3
+  - !sparrow.PlatesBoundsState
+    visible: true
+    opacity: 1.0
+    color_by_slip_type: false
+    lines: true
+  - !sparrow.CatalogState
+    visible: true
+    size: 1.9000000000000001
+    cpt: !pyrocko.gui.sparrow.elements.base.CPTState
+      cpt_name: slip_colors
+      cpt_mode: min-max
+      cpt_scale:
+      - null
+      - null
+    constant_color: chameleon2
+    size_parameter: magnitude
+    depth_offset: 0.0
+    symbol: beachball
+    selection: !sparrow.FileCatalogSelection
+      paths:
+      - /home/malde/Documents/Jobs_Praktika/PhD/publications/southsandwich/catalogs/geofon_main.yaml
+  - !sparrow.CatalogState
+    visible: true
+    size: 2.4000000000000004
+    cpt: !pyrocko.gui.sparrow.elements.base.CPTState
+      cpt_name: slip_colors
+      cpt_mode: min-max
+      cpt_scale:
+      - null
+      - null
+    constant_color: plum2
+    size_parameter: magnitude
+    depth_offset: 0.0
+    symbol: beachball
+    selection: !sparrow.FileCatalogSelection
+      paths:
+      - /home/malde/Documents/Jobs_Praktika/PhD/publications/southsandwich/catalogs/usgs_main.yaml
+  - !sparrow.CatalogState
+    visible: true
+    size: 4.800000000000001
+    cpt: !pyrocko.gui.sparrow.elements.base.CPTState
+      cpt_name: slip_colors
+      cpt_mode: min-max
+      cpt_scale:
+      - null
+      - null
+    constant_color: scarletred2
+    size_parameter: magnitude
+    depth_offset: 0.0
+    symbol: beachball
+    selection: !sparrow.FileCatalogSelection
+      paths:
+      - /home/malde/Documents/Jobs_Praktika/PhD/publications/southsandwich/catalogs/global_cmt_main.yaml
+  lighting: warm
+thumb: |-
+  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
