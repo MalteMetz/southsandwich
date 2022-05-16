@@ -131,7 +131,7 @@ def pdr_to_geometry(source):
         name=table.Header(
             name='final slip',
             label='final slip',
-            sub_headers=['']),
+            sub_headers=[]),
         values=slip_final)
 
     geom.add_property(
